@@ -1,0 +1,21 @@
+{
+  "name": "wptest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wp-env": "wp-env",
+    "wp-start": "wp-env start",
+    "wp-stop": "wp-env stop",
+    "wp-start-update": "wp-env start --update",
+    "wp-cli": "wp-env run cli wp",
+    "wp-destroy": "wp-env destroy",
+    "wp-copy-theme": "cp -R path_to_your_wordpress/wp-content/themes/wp-theme/* ./wp-theme/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/env": "^10.6.0"
+  }
+}

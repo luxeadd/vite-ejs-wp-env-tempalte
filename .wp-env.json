@@ -1,0 +1,31 @@
+{
+  "core": "https://ja.wordpress.org/latest-ja.zip",
+  "phpVersion": "8.1",
+  "themes": [
+    "./test-theme"
+  ],
+  "mappings": {
+    "wp-content/themes/wpenvsample/": "./dist/",
+    "sql": "./sql"
+  },
+  "port": 8888,
+  "env": {
+    "tests": {
+        "port": 8889
+    }
+  },
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/wp-multibyte-patch.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/query-monitor.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/custom-post-type-ui.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/breadcrumb-navxt.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/contact-form-7.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/admin-bar-position.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/seo-simple-pack.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/wpvivid-backuprestore.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/flamingo.latest-stable.zip"
+  ],
+  "config": {
+    "WP_DEBUG": true
+  }
+}
